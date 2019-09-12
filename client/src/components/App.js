@@ -2,11 +2,7 @@ import React from 'react';
 import {} from 'react-router-dom';
 import { BrowserRouter, Route} from 'react-router-dom';
 
-const Header = () => {
-    return (
-        <h2>Header</h2>
-    )
-}
+import Header from './Header';
 
 const Dashboard = () => {
     return (
@@ -28,10 +24,13 @@ const Landing = () => {
 
 const App = () => {
     return (
-        <div>
+        <div className="container">
             <BrowserRouter>
                 <div>
-                    <Route path="/" component={Landing} />
+                    <Header />
+                    <Route exact path="/" component={Landing} />
+                    <Route path="/newitems" component={Dashboard} />
+                    <Route exact path="/newitems/new" component={NewItem} />
                 </div>
             </BrowserRouter>
         </div>
