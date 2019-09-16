@@ -37,8 +37,8 @@ class App extends Component {
                     <div>
                         <Header />
                         <Route exact path="/" component={Landing} />
-                        <Route path="/newitem" component={Dashboard} />
-                        <Route exact path="/newitem/new" component={NewItem} />
+                        <Route path="/items" component={Dashboard} />
+                        <Route exact path="/items/new" component={NewItem} />
                     
                     </div>
             </BrowserRouter>
