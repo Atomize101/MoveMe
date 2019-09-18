@@ -1,0 +1,34 @@
+
+
+#container {
+	width: 360px;
+	margin: 0 auto;
+	border: 2px solid gray;
+}
+
+.completed {
+	color: gray;
+	text-decoration: line-through;
+}
+
+h1 {
+	text-align: center;
+}
+
+.ludwig {
+	position: relative;
+	padding-left: 1em;
+	border-left: 0.2em solid lighten($black, 40%);
+	font-family: 'Roboto', serif;
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+	font-weight: 100;
+	&:before, &:after {
+		content: '\201C';
+		font-family: 'Sanchez';
+		color: lighten($black, 40%);
+	 }
+	 &:after {
+		content: '\201D';
+	 }
+  }
