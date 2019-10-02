@@ -24,9 +24,9 @@ module.exports = app => {
         res.send(req.user);
     });
     
-    app.get('/api/items', (req, res) => {
-        res.send('Hello World');
-    });
+    //app.get('/api/items', (req, res) => {
+      //  res.send('Hello World');
+    //});
 
 
 };

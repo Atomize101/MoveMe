@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');\
+const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 var itemSchema = new mongoose.Schema({
@@ -10,3 +10,4 @@ var itemSchema = new mongoose.Schema({
 });
 
 mongoose.model('items', itemSchema);
+
