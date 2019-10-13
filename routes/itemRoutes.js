@@ -4,7 +4,7 @@ const requireLogin = require('../middlewares/requireLogin');
 const Item = mongoose.model('items');
 
 module.exports = app => {
-    app.post('/api/items', (req, res) => {
+    app.post('/api/items/add', (req, res) => {
         const name = req.body.name;
         const description = req.body.description;
         const price = req.body.price;
@@ -32,6 +32,23 @@ module.exports = app => {
         .catch(err => res.status(400).json('Error: ' + err));
     })
 };
+
+//module.exports = app => {
+  //  app.get('/api/items/:id', (req, res) => {
+    //    Item.findById(req.params.id)
+      //  .then(items => res.json(items))
+        //.catch(err => res.status(400).json('Error: ' + err));
+    //})
+//};
+
+//module.exports = app => {
+  //  app.delete('/api/items/:id', (req, res) => {
+    //    Item.findByIdAndDelete(req.params.id)
+      //  .then(items => res.json('Item Deleted'))
+        //.catch(err => res.status(400).json('Error: ' + err));
+ //   })
+//};
+
 
 //const Item = mongoose.model('items');
 

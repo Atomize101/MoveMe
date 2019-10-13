@@ -7,18 +7,9 @@ import './moveMe.css'
 
 import Header from './Header';
 import Landing from './Landing';
+import Dashboard from './Dashboard';
+import AddItem from './items/AddItem';
 
-const Dashboard = () => {
-    return (
-        <h2>Dashboard</h2>
-    )
-}
-
-const NewItem = () => {
-    return (
-        <h2>NewItem</h2>
-    )
-}
 
 class App extends Component {
 
@@ -33,8 +24,8 @@ class App extends Component {
                     <div>
                         <Header />
                         <Route exact path="/" component={Landing} />
-                        <Route path="/items" component={Dashboard} />
-                        <Route exact path="/items/new" component={NewItem} />
+                        <Route exact path="/items" component={Dashboard} />
+                        <Route exact path="/items/add" component={AddItem} />
 
                     </div>
                 </BrowserRouter>

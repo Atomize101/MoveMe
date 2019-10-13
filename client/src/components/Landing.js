@@ -18,14 +18,14 @@ const Landing = () => {
                 <p className="groucho">We were able to cut our packing time in half!</p>
             </div>
             
-            <div class="row">
-                <div class="col s12 m6">
-                    <div class="card blue-grey darken-1">
-                        <div class="card-content white-text">
-                            <span class="card-title">Never Forget a thing!</span>
+            <div className="row">
+                <div className="col s12 m6">
+                    <div className="card blue-grey darken-1">
+                        <div className="card-content white-text">
+                            <span className="card-title">Never Forget a thing!</span>
                             <p>MoveMe helps keep track of those items when it comes time for a new place to live!</p>
                         </div>
-                        <div class="card-action">
+                        <div className="card-action">
                             <a href="/items">Click to Begin</a>
                         </div>
                     </div>
