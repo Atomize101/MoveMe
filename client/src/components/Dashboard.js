@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Dashboard = () => {
     return(
-        <div>Dashboard
+        <div>
             <div className="fixed-action-btn">
             <Link to="/items/add" className="btn-floating btn-large waves-effect waves-light red"><i className="material-icons">add</i>
             </Link>
