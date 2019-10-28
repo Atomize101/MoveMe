@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import ItemForm from './ItemForm'
 
 class AddItem extends Component {
     render() {
         return (
             <div>
-                AddItem!
+                <ItemForm />
             </div>
         );
     }
