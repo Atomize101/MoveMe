@@ -1,11 +1,24 @@
 import React, { Component } from 'react';
 import ItemForm from './ItemForm'
+import ItemFormReview from './ItemFormReview';
 
 class AddItem extends Component {
+
+    state = { showFormReview: false };
+
+    renderContent() {
+        if(this.state.showFormReview === true) {
+            return <ItemFormReview />;
+        }
+        return <ItemForm onItemSubmit={() => this.setState({
+            showFormReview: true
+        })}/>;
+    }
+
     render() {
         return (
             <div>
-                <ItemForm />
+                {this.renderContent()}
             </div>
         );
     }
