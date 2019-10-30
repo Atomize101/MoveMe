@@ -8,7 +8,9 @@ class AddItem extends Component {
 
     renderContent() {
         if(this.state.showFormReview === true) {
-            return <ItemFormReview />;
+            return <ItemFormReview onCancel={() => this.setState({
+                showFormReview: false
+            })} />;
         }
         return <ItemForm onItemSubmit={() => this.setState({
             showFormReview: true
